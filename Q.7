@@ -1,0 +1,26 @@
+7.  What is the output for the following code?   
+
+  class Main
+      {
+            public static int func (int n)
+        {
+       
+            if (n == 1)
+                return 1;
+
+            return ( n * func(n-1) )/2;
+        }
+
+        public static void main(String args[])
+        {
+            System.out.print( func( 5 ) );
+        }
+    }	
+*
+Option:
+5
+10
+1
+4
+
+Answer: 5
