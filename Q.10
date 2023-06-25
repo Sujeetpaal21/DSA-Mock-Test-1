@@ -1,0 +1,29 @@
+10. What is the time complexity of the given function :  
+
+  public static String func(int arr[] , int st, int en)
+    {
+          if( st == en ){
+
+              System.out.print( arr[ st ] );
+
+              return;
+          }
+     
+        int mid = (st+en)/2;
+
+        System.out.print( arr[mid] );
+
+        func(arr, st, mid - 1 );
+
+        func( arr, mid + 1, en );
+     
+    }	
+*
+Option:
+
+O(log(N))
+O(N*log(N))
+O(N)
+None of these
+
+Answer: O(N)
